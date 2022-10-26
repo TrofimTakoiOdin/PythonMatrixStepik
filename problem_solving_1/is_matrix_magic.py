@@ -4,7 +4,7 @@ def is_magic(matrix, n):
     for c in matrix:
         matrix_copy.extend(c)
     for i in range(1, (n ** 2) + 1):
-        if i in matrix_copy:
+        if i not in matrix_copy:
             return False
     first_elem = sum(matrix[0])
     for i in range(1, n):
